@@ -5,7 +5,8 @@
 }
 body{
     background: linear-gradient(rgba(255, 51, 0, 0.712),orange);
-    height:180vh;  
+    height:145vh;
+    width: 100%;
 }
 .haut{
     display: flex;
@@ -16,23 +17,36 @@ body{
 .logo{
     height: 80px;
     width: 90px;   
+    background-color:rgb(235, 30, 30);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 .naruto{
     height: 180px;
     width: 400px;
-    margin-left: 80px;
+    margin-left: 80px;;
 }
 #site-search{
-    background-color:red;
+    background-color:rgb(235, 30, 30);
     width: 350px;
     height: 40px;
+    border:inset rgb(235, 30, 30);
+    padding: 15px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:25px;
+}
+#site-search:focus{
+  background-color: rgb(235, 30, 30);
+  outline-color: rgb(235, 30, 30);
+  outline: none;
 }
 .marquee-rtl {
     max-width: 80em;                      /* largeur de la fenêtre */
     margin: 1em auto 2em;
-    border: 10px solid red;
+    border: 10px solid rgb(235, 30, 30);
     overflow: hidden;                     /* masque tout ce qui dépasse */
     box-shadow: 0 .25em .5em rgb(255, 208, 0),inset 0 0 1em .25em rgb(255, 196, 0);
+    font-family: 'Nanum Pen Script', cursive;
   }
   .marquee-rtl > :first-child {
     display: inline-block;                /* modèle de boîte en ligne */
@@ -40,6 +54,7 @@ body{
     padding-left: 100%;                   /* placement à droite du conteneur */
     white-space: nowrap;                  /* pas de passage à la ligne */
     animation: defilement-rtl 15s infinite linear;
+    font-size: 30px;
   }
   @keyframes defilement-rtl {
     0% {
@@ -52,20 +67,20 @@ body{
   .navbar{
     display: flex;
     justify-content: space-evenly;
-    background-color:red;
+    background-color:rgb(235, 30, 30);
     height: 8vh;
     align-items: center;
 }
 .navbar a{
     text-decoration: none;
-    color: red;
+    color: rgb(235, 30, 30);
     font-size: 50px;
     background-color: rgb(29, 27, 27);
     font-family: 'Nanum Pen Script', cursive;
     border-radius: 10px;
 }
 nav{
-    width: 80%;  
+    width:80%;  
 }
 nav ul{
     list-style: none;
@@ -75,6 +90,7 @@ nav ul{
 }
 a:hover {
     background: linear-gradient(rgba(255, 51, 0, 0.712),orange);
+    color: black;
 
   }
   section{
@@ -95,7 +111,7 @@ a:hover {
   }
   .cards{
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
     margin-top: 30px;
   
@@ -115,4 +131,49 @@ a:hover {
     font-family: 'Nanum Pen Script', cursive;
     font-size: 35px;
   }
-  
+  .firstfooter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 15vh;
+    background-color:rgb(235, 30, 30);
+    width: 100%;
+    margin-top: 40px;
+  }
+  .navbar_footer{
+    display: flex;
+    height: 50px;
+    width: 20%;
+    justify-content: space-between;
+  }
+  .navbar_footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 50px;
+    margin: auto;
+  }
+  .navbar_footer a{
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar_footer ul img{
+    height: 50px;
+    width: 50px;
+  }
+  .secondfooter{
+    margin-top: 10px;
+    height: 8vh;
+    background-color:rgb(235, 30, 30);
+    width: 100%;
+  }
+  p{
+    display: flex;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    font-size: 50px;
+    justify-content: center;
+  }
+  li:not(:nth-child(3)) {
+    margin-right: 40px;
+}
